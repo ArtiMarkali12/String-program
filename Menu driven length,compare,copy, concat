@@ -1,0 +1,42 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+
+    int s1[100],s2[100];
+    int k,ch;
+    printf("\nenter first string :");
+
+    gets(s1);
+    printf("\n enter second string:");
+    gets(s2);
+    printf("\n 1-length\n 2-compare \n 3-copy \n 4- concatnate");
+    printf("\n enter choice");
+    scanf("%d",&ch);
+    switch (ch)
+    {
+    case 1:k=strlen(s1);
+    printf("\n length of string=%d",k);
+    break;
+    case 2:strcmp(s1,s2);
+    if(k>0)
+    printf("\n first string is greater");
+    else if(k<0)
+    printf("\n second string is greater");
+   else
+    printf("\n strings are same");
+    break;
+    case 3:strcpy(s1,s2);
+    printf("\n first string=%s",s1);
+    printf("\n second string=%s",s2);
+    break;
+    case 4:strcat(s1,s2);
+    printf("\n 1 st string=%s",s1);
+    printf("\n second string=%s",s2);
+    break;
+    default:printf("\n invalid choice");
+    break;
+    }
+    
+   
+}
