@@ -1,0 +1,16 @@
+#include<string.h>
+ #include<stdio.h>
+
+int main()
+
+{
+
+      char s1[100];
+
+      printf("Enter string:");
+
+      gets(s1);
+
+      printf("\n uppercase String=%s", strupr(s1));
+
+}
